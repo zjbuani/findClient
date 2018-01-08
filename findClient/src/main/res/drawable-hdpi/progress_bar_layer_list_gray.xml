@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"    android:drawable="@drawable/disvalueline"  >
+        <shape>
+            <corners android:radius="25dip" />
+            <gradient
+                android:startColor="#3C3F41"
+                android:centerColor="#3C3F41"
+                android:centerY="0.75"
+                android:endColor="#3C3F41"
+                android:angle="270"/>
+            <solid android:color="#80ffffff"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <solid android:color="#49CB5F"></solid>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

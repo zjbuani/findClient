@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.zhy.sample.folderlayout"
+        minSdkVersion 15
+        targetSdkVersion 25
+    }
+
+    productFlavors {
+        oa_android {}
+        letv {}
+        miui_android_shopb {}
+        txyyb_android {}
+        android_360 {}
+        huawei_android {}
+        android_huawei {}
+        android_baidu {}
+        android_samsung {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+dependencies {
+    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:5.2.0-beta.3@aar') {
+        transitive = true
+    }
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-alpha-9'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-alpha-9'
+
+    //没有使用特殊Header，可以不加这行
+    /*compile 'com.android.support:appcompat-v7:25'//版本随意（必须）*/
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.3.1'
+    //版本随意（非必须，引用可以解决无法预览问题）
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.github.dmytrodanylyk.shadow-layout:library:1.0.3'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile files('src/lib/volley.jar')
+    compile files('src/lib/universal-image-loader-1.8.4.jar')
+    compile files('src/lib/gson-2.2.1.jar')
+    compile 'com.github.mzule.fantasyslide:library:1.0.5'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile project(':library-slidingmenu')
+    compile project(':MPChartLib')
+    compile project(':Dtbt_pulltorefreshLibrary')
+    // 添加蓝牙项目依赖
+    compile 'com.clj.fastble:FastBleLib:2.1.6'
+    compile project(path: ':library')
+    compile 'com.github.limxing:Android-PromptDialog:1.1.3'
+    compile 'com.vividsolutions:jts:1.13'
+}

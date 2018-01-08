@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhy.sample.folderlayout"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="25" />
+
+    <application
+
+        android:name="com.fengxun.base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.zhy.sample.folderlayout.MainActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".MatrixPolyToPolyActivity"></activity>
+        <activity android:name=".MatrixPolyToPolyWithShadowActivity"></activity>
+        <activity android:name=".SimpleUseActivity"></activity>
+        <activity android:name=".FoldLayoutActivity"></activity>
+        <activity android:name=".DrawerLayoutSampleActivity"></activity>
+        <activity android:name="com.all.activity.HomeActivity">
+
+
+        </activity>
+        <activity android:name=".SlidingPanelLayoutSampleActivity"></activity>
+        <activity android:name="com.all.activity.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.all.activity.AdvertisementSystemActivity" />
+        <activity android:name="com.all.activity.CarGuidanceSystemActivity" />
+        <activity android:name="com.all.activity.CarPointSystemActivity" />
+        <activity android:name="com.all.activity.EnvironmentSystemActivity" />
+        <activity android:name="com.all.activity.LightingSystemActivity" />
+        <activity android:name="com.all.activity.StationSystemActivity" />
+        <activity android:name="com.all.activity.HomeSettingActivity" />
+        <activity android:name="com.all.activity.ManageMent" />
+        <activity android:name="com.all.activity.LightingSystemActivity_test" />
+        <activity android:name="com.all.activity.LightManBeanManActivity" />
+        <activity android:name="com.all.activity.SumActivity" />
+        <activity android:name="com.all.activity.SingleOperationActivity" />
+        <activity android:name="com.all.activity.SetModeCustom" />
+        <activity android:name="com.all.activity.CarPositionListManBeanManActivity" />
+        <activity android:name="com.all.activity.CarPositionFindActivity" />
+        <activity android:name="com.all.activity.CarGuidanceManagerActivity" />
+
+        <activity
+            android:name="com.all.activity.BleListActivity"
+            android:theme="@style/ToolBar" />
+
+        <activity
+            android:name="com.all.activity.BleLightControlActivity"
+            android:theme="@style/ToolBar_AppCompat" />
+
+        <activity
+            android:name="com.all.activity.BluetoothLightSettingActivity"
+            android:theme="@style/ToolBar_AppCompat" />
+
+
+        <activity
+            android:name="com.all.activity.AddWMSMapLightActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.all.activity.AddWMSMapActivity_Test"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.all.activity.DeviceMapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.all.activity.AddWMSMapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.all.activity.MapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+    </application>
+
+</manifest>

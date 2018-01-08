@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<!--
+    android:showDividers = "middle|end|beginning"-->
+    <LinearLayout
+        android:showDividers = "middle"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/right_childto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ceshi"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#c0c0c0"
+            />
+    </LinearLayout>
+</FrameLayout>

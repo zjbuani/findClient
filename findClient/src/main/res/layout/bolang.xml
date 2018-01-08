@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#30BDF5">
+
+        <com.view.WaveView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/home_bl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/buildlist2x"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/home_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:scaleType="center"
+                android:src="@drawable/setting2x" />
+         <FrameLayout
+             android:layout_centerInParent="true"
+             android:layout_width="wrap_content"
+
+             android:layout_height="match_parent">
+             <LinearLayout
+                 android:layout_marginTop="30dp"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_gravity="center_vertical"
+                 android:layout_height="wrap_content">
+            <TextView
+
+                android:id="@+id/project_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:textSize="35dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="℃"
+
+                  android:gravity="right"/>
+             </LinearLayout>
+         </FrameLayout>
+            <ImageView
+                android:id="@+id/weather_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/a4" />
+
+            <TextView
+                android:id="@+id/temperature_home_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weather_home"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.zhy.view.SliderLayout
+        android:id="@+id/image_group"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/lightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/lightbtn"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/carbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/carbtn"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/envbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/envbtn2x"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/adsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/adsbtn"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/workbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/workbtn"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/carsharebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/carsharebtn"
+            android:scaleType="centerInside" />
+    </com.zhy.view.SliderLayout>
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+</LinearLayout>

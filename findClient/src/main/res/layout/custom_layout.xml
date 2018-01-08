@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_centerVertical="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/edit_back"
+                    android:layout_width="76dp"
+                    android:layout_height="39dp"
+                    android:background="@drawable/back"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/edit_custom"
+                    android:textColor="#ffff"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout style="@style/custom_layout">
+
+            <TextView
+                style="@style/custom_child_tv"
+                android:text="名称" />
+
+            <EditText
+                style="@style/custom_child_et"
+                android:maxLength="8"
+                android:text="自定义编辑" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/custom_frame_layout">
+
+            <TextView
+                style="@style/custom_child_tv"
+                android:text="时间段一" />
+
+            <TextView
+                android:id="@+id/custom_clickable_itme1"
+                style="@style/custom_child_et"
+                android:clickable="true"
+                android:text="--" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffff" />
+
+        <FrameLayout style="@style/custom_layout">
+
+            <LinearLayout style="@style/custom_linear">
+
+                <TextView
+                    style="@style/custom_child_tv"
+                    android:text="车道照度" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mnl_subtract1"
+                        style="@style/custom_button_left"
+                        android:text="--" />
+
+                    <TextView
+                        android:id="@+id/mnl_tv1"
+                        style="@style/custom_edit"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/mnl_add1"
+                        style="@style/custom_button_left"
+                        android:text="+" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffff" />
+
+        <FrameLayout style="@style/custom_layout">
+
+            <LinearLayout style="@style/custom_linear">
+
+                <TextView
+                    style="@style/custom_child_tv"
+                    android:text="车道照度" />
+
+                <LinearLayout style="@style/custom_group_linear">
+
+                    <Button
+                        android:id="@+id/mxl_subtract1"
+                        style="@style/custom_button_left"
+                        android:text="--" />
+
+                    <TextView
+                        android:id="@+id/mxl_tv1"
+                        style="@style/custom_edit"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/mxl_add1"
+                        style="@style/custom_button_left"
+                        android:text="+" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout style="@style/custom_frame_layout">
+
+            <TextView
+                style="@style/custom_child_tv"
+                android:text="时间段二" />
+
+            <TextView
+                android:id="@+id/custom_clickable_itme2"
+                style="@style/custom_child_et"
+                android:clickable="true"
+                android:text="00:00-00:00" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffff" />
+
+        <FrameLayout style="@style/custom_layout">
+
+            <LinearLayout style="@style/custom_linear">
+
+                <TextView
+                    style="@style/custom_child_tv"
+                    android:text="车道照度" />
+
+                <LinearLayout style="@style/custom_group_linear">
+
+                    <Button
+                        android:id="@+id/mnl_subtract2"
+                        style="@style/custom_button_left"
+                        android:text="--" />
+
+                    <TextView
+                        android:id="@+id/mnl_tv2"
+                        style="@style/custom_edit"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/mnl_add2"
+                        style="@style/custom_button_left"
+                        android:text="+" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffff" />
+
+        <FrameLayout style="@style/custom_layout">
+
+            <LinearLayout style="@style/custom_linear">
+
+                <TextView
+                    style="@style/custom_child_tv"
+                    android:text="车道照度" />
+
+                <LinearLayout style="@style/custom_group_linear">
+
+                    <Button
+                        android:id="@+id/mxl_subtract2"
+                        style="@style/custom_button_left"
+                        android:text="--" />
+
+                    <TextView
+                        android:id="@+id/mxl2_tv"
+                        style="@style/custom_edit"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/mxl_add2"
+                        style="@style/custom_button_left"
+                        android:text="+" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/green"
+                android:padding="6dp"
+                android:text="完成"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

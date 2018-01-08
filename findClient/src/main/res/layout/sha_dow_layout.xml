@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dd.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <!-- android:background="@drawable/light_sha_dow"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_sha_dow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+              style="@style/text"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/text"
+                android:text="@string/energy" />
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="2" />
+
+            <TextView
+                style="@style/text"
+                android:text="@string/temperatur" />
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="2" />
+
+            <TextView
+                style="@style/text"
+                android:gravity="center_vertical"
+                android:text="@string/gears" />
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+
+            android:background="@color/default_shadow_color" />
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/energy"
+                style="@style/text"
+                android:text="@string/energy_tv" />
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/temperatur"
+                style="@style/text"
+                android:text="@string/temperatur_tv" />
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/gears"
+                style="@style/text"
+                android:text="@string/gears_tv" />
+
+            <TextView
+                style="@style/text"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</com.dd.ShadowLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <!-- 底部Radio button    点击时 是绿色-->
+    <item android:state_checked="true" android:drawable="@drawable/radio7_green"> </item>
+    <item android:state_checked="false" android:drawable="@drawable/radio7"> </item>
+</selector>

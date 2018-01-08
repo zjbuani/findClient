@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#808A87"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_bl"
+                android:layout_width="76dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back"
+                android:scaleType="center" />
+
+            <RadioGroup
+                android:id="@+id/system_rg_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/system_light_management"
+                    style="@style/Bottom_Tab_Style"
+                    android:checked="true"
+                    android:text="照明管理"
+                    android:textColor="@drawable/light_management_radio_text" />
+                <RadioButton
+                    android:id="@+id/system_enger_management"
+                    style="@style/Bottom_Tab_Style"
+                    android:text="节能管理"
+                    android:textColor="@drawable/light_management_radio_text" />
+            </RadioGroup>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/system_light_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>

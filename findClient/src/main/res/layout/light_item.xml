@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+   <!-- <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/Light_dialog_text"
+            android:background="@drawable/selector_light_item_button"
+            android:text="@string/energy"/>
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_light_item_button"
+            android:text="@string/temperatur"
+            style="@style/Light_dialog_text" />
+        <Button
+            android:background="@drawable/selector_light_item_button"
+            android:text="@string/gears"
+            android:layout_gravity="right"
+            style="@style/Light_dialog_text" />
+    </FrameLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/rg_group_basePager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/energy_button"
+                style="@style/Light_dialog_text"
+                android:checked="true"
+                android:button="@null"
+                android:background="@drawable/light_sha_dow_button_pressed_true"
+                android:text="@string/energy"/>
+            <RadioButton
+                android:id="@+id/temperatur_button"
+                style="@style/Light_dialog_text"
+                android:button="@null"
+                android:background="@drawable/light_sha_dow_button_pressed_false"
+                android:text="@string/temperatur" />
+            <RadioButton
+                android:id="@+id/gears_button"
+                style="@style/Light_dialog_text"
+                android:button="@null"
+                android:background="@drawable/light_sha_dow_button_pressed_false"
+                android:text="@string/gears"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/bgselect">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/home_bl"
+            android:layout_width="76dp"
+            android:layout_height="39dp"
+            android:background="@drawable/back"
+            android:scaleType="center" />
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal"
+            android:text="照明系统"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/all_home_set"
+            style="@style/text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/home_bl"
+            android:layout_margin="8dp"
+            android:background="@drawable/loc" />
+    </RelativeLayout>
+
+</FrameLayout>

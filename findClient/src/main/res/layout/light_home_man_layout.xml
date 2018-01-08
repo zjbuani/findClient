@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            style="@style/text"
+            android:id="@+id/title_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="@string/man_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/text"
+                android:layout_gravity="center"
+                android:background="@drawable/lightbig2x" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+                <TextView
+                    style="@style/text"
+                    android:layout_marginRight="25dp"
+                    android:id="@+id/device_num"
+                    android:text="2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.29" />
+                <TextView
+                    android:id="@+id/light_mode"
+                    style="@style/text"
+                    android:layout_marginLeft="25dp"
+                    android:text="照明模式" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center|center_horizontal"
+                android:background="#C0C0C0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <TextView
+                    style="@style/text"
+                    android:layout_marginRight="25dp"
+                    android:text="设备" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    style="@style/text"
+                    android:layout_marginLeft="25dp"
+                    android:text="照明模式" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <include layout="@layout/raiobutton" />
+        <!--    <include layout="@layout/pro_bar" />-->
+
+            <include
+                layout="@layout/ble_pro_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/light_home_man_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/manual_open"
+                    android:textColor="@drawable/radio_home_man_text"
+                    style="@style/radio_man_button"
+                    android:background="@drawable/radio_home_man_text_bg"
+                    android:text="手动开启"
+                    />
+                <RadioButton
+                    android:id="@+id/manual_off"
+                    android:text="手动关闭"
+                    style="@style/radio_man_button"
+                    android:textColor="@drawable/radio_home_man_text"
+                    android:background="@drawable/radio_home_man_text_bg" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/energy_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/energy_pattern_button"
+                    android:textColor="@drawable/radio_home_man_text"
+                    style="@style/radio_man_bottom"
+                    android:background="@drawable/radio_home_man_text_bg"
+                    android:text="节能模式"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

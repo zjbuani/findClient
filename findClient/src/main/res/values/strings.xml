@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="access_token">pk.eyJ1Ijoiemp4aG5pIiwiYSI6ImNpd2VpbjR4NzAwOW4yenE3ZzlyYTFyaHgifQ.baLmb7XJyY5xf36TcvD1CQ</string>
+    <string name="user_name">输入用户名或手机号</string>
+    <string name="app_name">GOS2.9</string>
+    <string name="look_list">查看列表</string>
+    <string name="setting">设置</string>
+    <string name="show_project">20℃</string>
+    <string name="weather">天气</string>
+    <string name="temperature">温度</string>
+    <string name="temperatures">温度区间</string>
+    <string name="offtitle">蜂寻(上海)信息科技有限公司</string>
+    <string name="light">照明模式: 手动开启</string>
+    <string name="lighttime">节能时间段:0: 00 - 0: 00</string>
+
+    <string name="energy">能耗</string>
+    <string name="illuminance">照度</string>
+    <string name="edit_custom">编辑自定义</string>
+
+    <string name="man_title">全车库</string>
+    <string name="temperatur">温度</string>
+    <string name="gears">档位</string>
+    <string name="energy_tv"> - - </string>
+    <string name="gears_tv">- -</string>
+    <string name="temperatur_tv"> - - </string>
+    <string name="setitemsystem">系统说明</string>
+    <string name="setitemversion">版本信息</string>
+    <string name="setitemserverpath">连接服务器地址</string>
+    <string name="back">退出登录</string>
+    <string name="get_data" >确认</string>
+    <string name="switch_wrap_mode">switch wrap mode</string>
+    <string name="switch_wrap_mode_true">switch wrap mode | current : true</string>
+    <string name="switch_wrap_mode_false">switch wrap mode | current : false</string>
+    <string name="content_1">set content 1</string>
+    <string name="content_2">set content 2</string>
+    <string name="scroll_downwards_2">scroll smoothly by 2 item</string>
+    <string name="get_current_content">get picked content</string>
+    <string name="to_time_picker_view">TimePickerView</string>
+    <string name="activity_time_picker">TimePickerView</string>
+    <string name="picked_content_is">picked content is : </string>
+    <string name="hour_hint">时</string>
+    <string name="minute_hint">分</string>
+    <string name="BluetoothServerDataErr">蓝牙服务回复数据错误</string>
+    <string name="BluetoothLightToast">此设备正处于节能模式下</string>
+    <string name="BluetoothLightMainVersion">主板 3.0</string>
+    <string name="BluetoothLightMode1Version">模块1 1.1</string>
+    <string name="BluetoothLightMode2Version">模块2 3.0</string>
+
+    <string name="in_scroll_view">In ScrollView</string>
+    <string name="show_in_dialog">Show in Dialog</string>
+    <string name="place_holder_above_2">HourPicker\'s callbacks is invoked in a new thread, the other 2 pickers\' in main thread</string>
+    <string name="place_holder_below_1">Placeholder Button2</string>
+    <string name="place_holder_below_2">Placeholder Button3</string>
+    <string name="place_holder_below_3">Placeholder Button4</string>
+    <string name="current_thread_name">callback\'s thread name : </string>
+    <string name="current_picked_value">current picked value : </string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="state">状态</string>
+    <string name="info">详情</string>
+    <string name="carnum">总车位</string>
+    <string name="car_state">满车位</string>
+    <string name="ful_car_position">空车位</string>
+    <string name="fragment_in_card_below">Map fragment container in card below</string>
+
+    <string name="bluetooth_suggest">请携带移动设备站在所连接设备的正下方进行操作</string>
+    <string name="bluetooth_temperature_text">29°</string>
+    <string name="bluetooth_temperature">温度</string>
+    <string name="bluetooth_temperature_duration_text">00h</string>
+    <string name="bluetooth_temperature_duration">运行时间</string>
+    <string name="bluetooth_back">上一步</string>
+    <string name="bluetooth_getDevice">选取设备</string>
+    <string name="next">下一步</string>
+
+    <color name="statusColor">#000000</color>
+    <!-- toolBar color -->
+    <color name="toolBarColor">#000000</color>
+    <!--EditText,RadioButton,CheckBox color-->
+    <color name="editColor">#ffffff</color>
+    <!--Window color-->
+    <color name="widowColor">#000000</color>
+
+</resources>

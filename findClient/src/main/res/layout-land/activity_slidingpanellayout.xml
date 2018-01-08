@@ -1,0 +1,116 @@
+<com.zhy.view.FoldSlidingPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/id_left_menu"
+        android:name="com.fragment.LeftMenuFragment"
+        android:layout_width="240dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30BDF5"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:text="LookList" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="设置 " />
+
+            <TextView
+                android:id="@+id/project_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="TextView"
+                tools:text="显示项目" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30BDF5"
+             >
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/mypading"
+                android:text="天气"
+                android:textSize="25dp" />
+
+            <ImageView
+                style="@style/mypading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/weather"
+                android:layout_toEndOf="@+id/weather"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/weather_image" />
+
+            <TextView
+                style="@style/mypading"
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/weather"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_toEndOf="@+id/weather_image"
+                android:layout_toRightOf="@+id/weather_image"
+                android:text="TextView"
+                android:textSize="25dp"
+                tools:text="温度" />
+
+            <TextView
+                style="@style/mypading"
+                android:id="@+id/temperature_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="25dp"
+                tools:text="气温区间"
+                android:layout_below="@+id/weather_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.zhy.ui.DynamicWave
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+
+</com.zhy.view.FoldSlidingPanelLayout>
